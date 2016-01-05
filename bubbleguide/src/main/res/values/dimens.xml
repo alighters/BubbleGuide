@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bubble_guide_corner_size">10dp</dimen>
+
+    <dimen name="bubble_guide_padding_left">20dp</dimen>
+    <dimen name="bubble_guide_padding_right">20dp</dimen>
+    <dimen name="bubble_guide_padding_top">20dp</dimen>
+    <dimen name="bubble_guide_padding_bottom">20dp</dimen>
+
+    <dimen name="bubble_guide_tip_text_size">14sp</dimen>
+    <dimen name="bubble_guide_tip_text_color">#333333</dimen>
+
+    <dimen name="bubble_guide_confirm_text_color">#0080FF</dimen>
+    <dimen name="bubble_guide_confirm_text_size">#13sp</dimen>
+
+    <dimen name="bubble_guide_tip_padding">12dp</dimen>
+    
+    <dimen name="bubble_guide_arrow_height">7dp</dimen>
+    <dimen name="bubble_guide_arrow_width">10dp</dimen>
+
+    <dimen name="bubble_guide_bg_color">#ffffff</dimen>
+
+    <dimen name="bubble_guide_width">260dp</dimen>
+
+</resources>
