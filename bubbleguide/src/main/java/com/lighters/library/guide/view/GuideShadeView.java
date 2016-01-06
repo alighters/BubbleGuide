@@ -8,10 +8,10 @@ import android.widget.FrameLayout;
  * <p>
  * 遮罩层View (通过添加BubbleGuideView与实现draw绘制来实现遮罩层的引导)
  */
-public class ShadeGuideView extends FrameLayout {
+public class GuideShadeView extends FrameLayout {
 
 
-    public ShadeGuideView(Context context) {
+    public GuideShadeView(Context context) {
         super(context);
     }
 

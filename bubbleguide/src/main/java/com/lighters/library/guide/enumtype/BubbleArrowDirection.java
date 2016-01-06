@@ -3,7 +3,7 @@ package com.lighters.library.guide.enumtype;
 /**
  * Created by david on 15/12/28.
  */
-public enum BubbleArrowLocation {
+public enum BubbleArrowDirection {
 
     LEFT(0x00),
     RIGHT(0x01),
@@ -12,12 +12,12 @@ public enum BubbleArrowLocation {
 
     private int mValue;
 
-    BubbleArrowLocation(int value) {
+    BubbleArrowDirection(int value) {
         this.mValue = value;
     }
 
-    public static BubbleArrowLocation mapIntToValue(int stateInt) {
-        for (BubbleArrowLocation value : BubbleArrowLocation.values()) {
+    public static BubbleArrowDirection mapIntToValue(int stateInt) {
+        for (BubbleArrowDirection value : BubbleArrowDirection.values()) {
             if (stateInt == value.getIntValue()) {
                 return value;
             }
@@ -25,7 +25,7 @@ public enum BubbleArrowLocation {
         return getDefault();
     }
 
-    public static BubbleArrowLocation getDefault() {
+    public static BubbleArrowDirection getDefault() {
         return LEFT;
     }
 

@@ -14,7 +14,7 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 
-import com.lighters.library.guide.enumtype.BubbleArrowLocation;
+import com.lighters.library.guide.enumtype.BubbleArrowDirection;
 
 
 /**
@@ -31,7 +31,7 @@ public class BubbleDrawable extends Drawable {
     private float mArrowPosition;
     private int bubbleColor;
     private Bitmap bubbleBitmap;
-    private BubbleArrowLocation mBubbleArrowLocation;
+    private BubbleArrowDirection mBubbleArrowDirection;
     private BubbleType bubbleType;
     private BubbleDrawable(Builder builder) {
         this.mRect = builder.mRect;
@@ -41,7 +41,7 @@ public class BubbleDrawable extends Drawable {
         this.mArrowPosition = builder.mArrowPosition;
         this.bubbleColor = builder.bubbleColor;
         this.bubbleBitmap = builder.bubbleBitmap;
-        this.mBubbleArrowLocation = builder.mBubbleArrowLocation;
+        this.mBubbleArrowDirection = builder.mBubbleArrowDirection;
         this.bubbleType = builder.bubbleType;
     }
 
@@ -70,8 +70,8 @@ public class BubbleDrawable extends Drawable {
         mPaint.setColorFilter(cf);
     }
 
-    private void setUpPath(BubbleArrowLocation mBubbleArrowLocation, Path path){
-        switch (mBubbleArrowLocation){
+    private void setUpPath(BubbleArrowDirection mBubbleArrowDirection, Path path){
+        switch (mBubbleArrowDirection){
             case LEFT:
                 setUpLeftPath(mRect, path);
                 break;
@@ -103,7 +103,7 @@ public class BubbleDrawable extends Drawable {
                 setUpShaderMatrix();
                 break;
         }
-        setUpPath(mBubbleArrowLocation, mPath);
+        setUpPath(mBubbleArrowDirection, mPath);
         canvas.drawPath(mPath, mPaint);
     }
 
@@ -236,7 +236,7 @@ public class BubbleDrawable extends Drawable {
         private int bubbleColor = DEFAULT_BUBBLE_COLOR;
         private Bitmap bubbleBitmap;
         private BubbleType bubbleType = BubbleType.COLOR;
-        private BubbleArrowLocation mBubbleArrowLocation = BubbleArrowLocation.LEFT;
+        private BubbleArrowDirection mBubbleArrowDirection = BubbleArrowDirection.LEFT;
 
         public Builder rect(RectF rect){
             this.mRect = rect;
@@ -275,8 +275,8 @@ public class BubbleDrawable extends Drawable {
             return this;
         }
 
-        public Builder arrowLocation(BubbleArrowLocation bubbleArrowLocation){
-            this.mBubbleArrowLocation = bubbleArrowLocation;
+        public Builder arrowLocation(BubbleArrowDirection bubbleArrowDirection){
+            this.mBubbleArrowDirection = bubbleArrowDirection;
             return this;
         }
 

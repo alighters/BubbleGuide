@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bubble_guide_tip_text_color">#333333</color>
+    <color name="bubble_guide_confirm_text_color">#0080FF</color>
+    <color name="bubble_guide_bg_color">#ffffff</color>
+</resources>

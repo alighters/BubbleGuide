@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BubbleGuide</string>
+    <string name="bubble_guide_confirm_text">我知道了</string>
 </resources>
