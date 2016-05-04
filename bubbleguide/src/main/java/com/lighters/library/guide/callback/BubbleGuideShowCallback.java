@@ -1,7 +1,7 @@
 package com.lighters.library.guide.callback;
 
 /**
- * Created by david on 15/12/31.
+ * Created by alighers on 15/12/31.
  * <p/>
  * BubbleGuide显示与消失的回调
  */

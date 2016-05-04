@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">BubbleGuideDemo</string>
     <string name="action_settings">Settings</string>
+
+    <string name="guide_normal">Guide Normal</string>
+    <string name="guide_round_highlight">Guide Round High Light</string>
+    <string name="guide_rect_highlight">Guide Rect High Light</string>
+    <string name="guide_menu">Guide Menu</string>
 </resources>

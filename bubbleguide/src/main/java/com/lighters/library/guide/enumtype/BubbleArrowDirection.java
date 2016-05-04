@@ -1,7 +1,7 @@
 package com.lighters.library.guide.enumtype;
 
 /**
- * Created by david on 15/12/28.
+ * Created by alighers on 15/12/28.
  */
 public enum BubbleArrowDirection {
 
